@@ -1,0 +1,33 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+    content: [
+      "./main.jsx",
+      "./src/**/*.{js,ts,jsx,tsx}",
+    ],
+    theme: {
+      extend: {
+        colors: {
+          background: "#121212", // Very dark gray
+          cardBackground: "#1e293b", // Dark slate blue
+          textPrimary: "#f8fafc", // Very light gray
+          textSecondary: "#94a3b8", // Cool gray
+          accent: "#f43f5e", // Vibrant pink
+          accentHover: "#e11d48", // Darker pink for hover
+          buttonBackground: "#0ea5e9", // Vibrant blue
+          buttonHover: "#0284c7", // Darker blue for hover
+        },
+        spacing: {
+          section: "5rem", // Increased spacing between sections
+          cardPadding: "3rem", // Larger padding for cards
+        },
+        borderRadius: {
+          card: "15px",
+        },
+        boxShadow: {
+          card: "0 5px 15px rgba(0, 0, 0, 0.5)", // Stronger shadow for cards
+        },
+      },
+    },
+    plugins: [],
+  };
+  
